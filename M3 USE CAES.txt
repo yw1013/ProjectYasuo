@@ -1,0 +1,7 @@
+LOGIN/LOGOUT - Jongwoo Jang
+Registration
+FORGOT PASSWORD
+Edit Profile
+SEARCH FOR MOVIE
+Rate the movie
+Sort movie by Movie Recommendations, Top rentals, released date(new)

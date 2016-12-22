@@ -1,0 +1,29 @@
+apply plugin: 'java'  // saying building a java project
+defaultTasks 'jar'
+/*
+*Jar section
+*build manifest and what's inside it
+*/
+jar {
+    manifest {
+        attributes('Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+			'Class-Path': '../../lib/resources.jar')
+	
+    }
+}
+
+/*
+* where extra jars are.(extra repository)
+*/
+repositories {
+	flatDir {
+		dirs 'lib'
+	}
+}
+
+/*
+*name of jar file that i actually want to use as a resource
+*/
+dependencies {
+	compile files('/lib/resources.jar')
+}
